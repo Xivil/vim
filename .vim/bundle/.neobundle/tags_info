@@ -1,2 +1,4 @@
 neobundle.vim
+neocomplete.vim
+neomru.vim
 unite.vim
