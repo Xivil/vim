@@ -244,4 +244,17 @@ if kaoriya#switch#enabled('disable-go-extra')
   let &rtp = join(filter(split(&rtp, ','), 'v:val !~ "[/\\\\]plugins[/\\\\]golang$"'), ',')
 endif
 
+"---------------------------------------------------------------------------
+" neobundle
+
+filetype plugin indent off
+if has('vim_starting')
+    set runtimepath+=$VIM/.vim/bundle/neobundle.vim
+    call neobundle#begin(expand('$VIM/.vim/bundle/'))
+      NeoBundleFetch 'Shougo/neobundle.vim'
+      NeoBundle 'Shougo/unite.vim'
+    call neobundle#end()
+endif
+filetype plugin indent on
+
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
