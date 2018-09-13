@@ -254,6 +254,7 @@ if has('vim_starting')
       NeoBundleFetch 'Shougo/neobundle.vim'
       NeoBundle 'Shougo/unite.vim'
       NeoBundle 'davidhalter/jedi-vim'
+	  NeoBundle 'thinca/vim-quickrun'
       " unite {{{
       let g:unite_enable_start_insert=1
       nmap <silent> <C-u><C-b> :<C-u>Unite buffer<CR>
