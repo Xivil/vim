@@ -281,9 +281,11 @@ filetype plugin indent on
 inoremap <expr><C-i>     neocomplete#complete_common_string()
 
 "python3のdllパスの指定
-set pythonthreedll=C:\Users\kohei\Anaconda3\pkgs\python-3.6.4-h6538335_1/python36.dll
+set pythonthreedll=C:\Users\kohei\Anaconda3\pkgs\python-3.6.6-hea74fb7_0\python36.dll
 
 " docstringは表示しない
 autocmd FileType python setlocal completeopt-=preview
 
+"エンコード設定
+set fileencoding=utf-8
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
