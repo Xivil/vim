@@ -288,7 +288,9 @@ autocmd FileType python setlocal completeopt-=preview
 
 "エンコード設定
 set fileencoding=utf-8
+autocmd BufRead *.{h,cpp,py} set fenc=utf-8
+autocmd BufWrite *.{h,cpp,py} set fenc=utf-8
 
 "QuickRunのキーマッピング
-map <silent> <F5> :QuickRun -outputter/buffer/split ":botright"<CR>
+map <silent> <F5> :QuickRun -output_encode/encoding "uft-8" -outputter/buffer/split ":botright"<CR>
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
