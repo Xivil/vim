@@ -288,4 +288,7 @@ autocmd FileType python setlocal completeopt-=preview
 
 "エンコード設定
 set fileencoding=utf-8
+
+"QuickRunのキーマッピング
+map <silent> <F5> :QuickRun -outputter/buffer/split ":botright"<CR>
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
