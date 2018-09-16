@@ -255,6 +255,7 @@ if has('vim_starting')
       NeoBundle 'Shougo/unite.vim'
       NeoBundle 'davidhalter/jedi-vim'
 	  NeoBundle 'thinca/vim-quickrun'
+	  NeoBundle 'andviro/flake8-vim'
       " unite {{{
       let g:unite_enable_start_insert=1
       nmap <silent> <C-u><C-b> :<C-u>Unite buffer<CR>
@@ -290,7 +291,7 @@ autocmd FileType python setlocal completeopt-=preview
 set fileencoding=utf-8
 autocmd BufRead *.{h,cpp,py} set fenc=utf-8
 autocmd BufWrite *.{h,cpp,py} set fenc=utf-8
-"
+
 "QuickRunのキーマッピング
 map <silent> <F5> :QuickRun -output_encode/encoding "uft-8" -outputter/buffer/split ":botright"<CR>
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
