@@ -256,6 +256,7 @@ if has('vim_starting')
       NeoBundle 'davidhalter/jedi-vim'
 	  NeoBundle 'thinca/vim-quickrun'
 	  NeoBundle 'andviro/flake8-vim'
+	  NeoBundle 'ervandew/supertab'
       " unite {{{
       let g:unite_enable_start_insert=1
       nmap <silent> <C-u><C-b> :<C-u>Unite buffer<CR>
@@ -294,4 +295,8 @@ autocmd BufWrite *.{h,cpp,py} set fenc=utf-8
 
 "QuickRunのキーマッピング
 map <silent> <F5> :QuickRun -output_encode/encoding "uft-8" -outputter/buffer/split ":botright"<CR>
+
+"jediのタブキー補完の設定
+let g:SuperTabContextDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "<c-n>"
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
