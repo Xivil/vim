@@ -257,7 +257,6 @@ if has('vim_starting')
 	  NeoBundle 'thinca/vim-quickrun'
 	  NeoBundle 'andviro/flake8-vim'
 	  NeoBundle 'ervandew/supertab'
-	  NeoBundle 'rhysd/vim-operator-surround'
       " unite {{{
       let g:unite_enable_start_insert=1
       nmap <silent> <C-u><C-b> :<C-u>Unite buffer<CR>
@@ -301,9 +300,6 @@ map <silent> <F5> :QuickRun -output_encode/encoding "uft-8" -outputter/buffer/sp
 let g:SuperTabContextDefaultCompletionType = "context"
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-"operator-surroundの設定
-map <silent>sa <Plug>(operator-surround-append)
-map <silent>sd <Plug>(operator-surround-delete)
-map <silent>sr <Plug>(operator-surround-replace)
+
 
 " Copyright (C) 2009-2016 KaoriYa/MURAOKA Taro
