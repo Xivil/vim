@@ -257,6 +257,7 @@ if has('vim_starting')
 	  NeoBundle 'thinca/vim-quickrun'
 	  NeoBundle 'andviro/flake8-vim'
 	  NeoBundle 'ervandew/supertab'
+	  NeoBundle 'scrooloose/nerdtree'
       " unite {{{
       let g:unite_enable_start_insert=1
       nmap <silent> <C-u><C-b> :<C-u>Unite buffer<CR>
